@@ -10,7 +10,7 @@ public class NumberGuessingGame {
         System.out.println("Guess the number from 1 to 100.");
         System.out.println("You have 5 tries to guess the number");
 
-        Scanner sc =  new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         boolean result = false;
 
         while (tries > 0) {
@@ -23,12 +23,15 @@ public class NumberGuessingGame {
                 System.out.println("You WIN !!!");
                 result = true;
                 break;
+
             } else if (number > randomNumber) {
                 System.out.println("Your guess is HIGH. You have " + (tries - 1) + " chances left to guess the number.");
                 tries--;
+
             } else {
                 System.out.println("Your guess is LOW. You have " + +(tries - 1) + " chances left to guess the number.");
                 tries--;
+
             }
         }
 
